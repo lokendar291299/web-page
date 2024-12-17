@@ -1,0 +1,1170 @@
+                   // 1. Introduction to JavaScript
+// What is JavaScript?
+// JavaScript is a versatile programming language primarily used for creating interactive and dynamic content on the web. It can be used on both the client-side (in the browser) and server-side (using Node.js).
+
+xample
+// Let's start with a simple "H// Hello World Eello, World!" program.
+
+// In the Browser Console
+// Open your browser's developer tools (usually by pressing F12 or right-clicking and selecting "Inspect") and go to the "Console" tab. Type the following code and press Enter:
+
+console.log("Hello, World!");
+
+
+
+
+// In an HTML File
+// Create an HTML file (e.g., index.html) with the following content:
+
+
+
+    <script>
+        console.log("Hello, World!");
+    </script>
+
+
+
+
+                                    // 2. Basic Syntax
+// JavaScript Code Structure
+// JavaScript code can be written directly in an HTML file within <script> tags or in a separate .js file.
+
+
+
+                                        // Comments
+// Comments are used to explain code or to prevent execution.
+
+                                    // Single-line comment:
+
+// This is a single-line comment
+console.log("Hello, World!");
+
+                                // Multi-line comment:
+/* This is a 
+   multi-line comment */
+   console.log("Hello, World!");
+
+
+
+                        // 3. Variables and Data Types
+// Variables
+// Variables are used to store data. In JavaScript, you can declare variables using var, let, or const.
+
+                                // var
+
+var a = "this is varrrrrrrrrrrrrrrrrr";
+var a = "this is 2nd varrrrrrrrrrrrrrrrrr";
+ a = "this is 3rd varrrrrrrrrrrrrrrrrr";
+
+                                    // let
+let b = "hello from let";
+let b = "hello updated"; // An error in this line
+b = "this is udated";
+document.write(b + "<br>");
+
+                                    // const
+const c = 20;
+// const c = 20; //An error in this line
+// c = 30;
+document.write(c + "<br>");
+
+// var (older way, function-scoped)
+
+var message = "Hello, World!";
+console.log(message);
+
+// let (block-scoped, recommended for most cases)
+let message = "Hello, World!";
+console.log(message);
+
+// const (block-scoped, used for constants)
+const message = "Hello, World!";
+console.log(message);
+
+
+
+                            // Data Types
+// JavaScript has several data types:
+
+                                    // String: Text data
+let name = "technoglobe";
+document.write(name + "<br>");
+
+
+
+
+                                    // Number: Numeric data
+let age = 25;
+document.write(age + "<br>");
+
+
+
+
+                                    // Boolean: True or false
+let isStudent = true;
+document.write(isStudent + "<br>");
+
+
+
+
+                                // Null: Empty or non-existent value
+let emptyValue = null;
+document.write(emptyValue + "<br>");
+
+
+
+                                // Object: Complex data structures
+let person = { firstName: "IT", lastName: "Desk" };
+document.write(person[firstName]);
+
+document.write(person.firstName + " " + person.lastName);
+console.log(`${person.firstName + person.lastName} ${person.lastName}`); // Output: techno globe
+
+
+
+                                // Array: List of values
+let numbers = [1, 2, 3, 4, 5];
+document.write(numbers + "<br>");
+
+console.log(numbers); // Output: [1, 2, 3, 4, 5]
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+//                                     Operators
+
+// Operators in JavaScript are used to perform operations on variables and values. They are classified into different categories:
+
+
+
+Arithmetic Operators
+
+
+
++ (Addition): Adds two numbers.
+
+
+
+let a = 5;
+
+let b = 3;
+
+let sum = a + b; // 8
+
+
+
+
+
+- (Subtraction): Subtracts one number from another.
+
+
+
+let difference = a - b; // 2
+
+
+
+
+
+* (Multiplication): Multiplies two numbers.
+
+
+
+let product = a * b; // 15
+
+
+
+
+
+/ (Division): Divides one number by another.
+
+
+
+let quotient = a / b; // 1.6667
+
+
+
+
+
+% (Modulus): Returns the remainder of a division.
+
+
+
+let remainder = a % b; // 2
+
+
+
+
+
+++ (Increment): Increases a number by one.
+
+
+
+let c = 10;
+
+c++; // 11
+
+
+
+
+
+-- (Decrement): Decreases a number by one.
+
+
+
+c--; // 10
+
+
+
+
+
+Assignment Operators
+
+
+
+= (Assignment): Assigns a value to a variable.
+
+
+
+let x = 10;
+
+
+
+
+
++= (Addition Assignment): Adds a value to a variable.
+
+
+
+x += 5; // x = x + 5; // 15
+
+
+
+
+
+-= (Subtraction Assignment): Subtracts a value from a variable.
+
+
+
+x -= 3; // x = x - 3; // 12
+
+
+
+
+
+*= (Multiplication Assignment): Multiplies a variable by a value.
+
+
+
+x *= 2; // x = x * 2; // 24
+
+
+
+
+
+/= (Division Assignment): Divides a variable by a value.
+
+
+
+x /= 4; // x = x / 4; // 6
+
+
+
+
+
+%= (Modulus Assignment): Applies modulus to a variable.
+
+
+
+x %= 3; // x = x % 3; // 0
+
+
+
+
+
+Comparison Operators
+
+
+
+== (Equal to): Checks if two values are equal.
+
+a = 5 ;
+
+b = 5 ;
+
+let isEqual = (a == b); // true
+
+
+
+
+
+=== (Strict Equal to): Checks if two values and their types are equal.
+
+
+
+a = "5" ;
+
+b = 12 ;
+
+let isStrictEqual = (a === b); // false
+
+
+
+
+
+!= (Not Equal to): Checks if two values are not equal.
+
+
+
+let isNotEqual = (a != b); // true
+
+
+
+
+
+!== (Strict Not Equal to): Checks if two values and their types are not equal.
+
+a = "50" ;
+
+b = 45 ;
+
+let isStrictNotEqual = (a !== b); // true
+
+
+
+
+
+> (Greater than): Checks if one value is greater than another.
+
+a = 50 ;
+
+b = 45 ;
+
+
+
+let isGreater = (a > b); // true
+
+
+
+
+
+< (Less than): Checks if one value is less than another.
+
+a = 48 ;
+
+b = 45 ;
+
+
+
+let isLess = (a < b); // false
+
+
+
+
+
+>= (Greater than or Equal to): Checks if one value is greater than or equal to another.
+
+a = 48 ;
+
+b = 50 ;
+
+
+
+let isGreaterOrEqual = (a >= b); // true
+
+
+
+
+
+<= (Less than or Equal to): Checks if one value is less than or equal to another.
+
+a = 48 ;
+
+b = 50 ;
+
+
+
+
+
+let isLessOrEqual = (a <= b); // false
+
+
+
+
+
+Logical Operators
+
+
+
+&& (Logical AND): Returns true if both operands are true.
+
+a = 48 ;
+
+b = 50 ;
+
+
+                  true      true  = true
+                  false      true  = false
+                  true      false  = false
+                  false      false  = false
+let andResult = (a > b  && b > 1 ); // true
+
+
+
+
+
+|| (Logical OR): Returns true if at least one operand is true.
+
+a = 48 ;
+
+b = 50 ;
+
+
+                  false      false  = false
+                  true      true  = true
+                  false      true  = true
+                  true      false  = true
+let orResult = (a > b || b > 5); // true
+
+
+
+
+
+! (Logical NOT): Returns true if the operand is false.
+
+
+
+
+
+let notResult = !(a > b); // false
+
+
+
+
+
+                    Practical Examples
+
+
+
+                  Calculate the Area of a Circle
+
+
+
+let radius = 5;
+
+const pi = 3.14159;
+
+let area = pi * radius * radius;
+
+console.log("Area of the circle:", area); // Area of the circle: 78.53975
+
+Document.write();
+
+
+
+ 
+
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+                // 5. Control Structures (Conditionals and Loops)
+
+// Control structures allow you to control the flow of execution in your code. The most common control structures in JavaScript are conditionals and loops.
+
+
+
+// Conditionals
+
+// if...else
+
+// The if...else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed.
+
+
+
+let age = 20;
+
+if (age >= 18) {
+
+    console.log("You are an adult.");
+
+} else {
+
+    console.log("You are a minor.");
+
+}
+
+
+
+// if...else if...else
+
+// The if...else if...else statement allows you to test multiple conditions.
+
+
+
+let score = 85;
+
+if (score >= 90) {
+
+    console.log("Grade: A");
+
+} else if (score >= 80) {
+
+    console.log("Grade: B");
+
+} else if (score >= 70) {
+
+    console.log("Grade: C");
+
+} else if (score >= 60) {
+
+    console.log("Grade: D");
+
+} else {
+
+    console.log("Grade: F");
+
+}
+
+
+
+
+
+                   Check Voting Eligibility
+
+let age = 18;
+
+if (age >= 17) {
+
+    console.log("You are eligible to vote.");
+
+}
+
+
+
+else {
+
+    console.log("You are not eligible to vote.");
+
+}
+
+
+
+
+
+
+Grade Calculation
+
+let marks = 85;
+
+let grade;
+
+if (marks >= 90) {
+
+    grade = 'A';
+
+} else if (marks >= 80) {
+
+    grade = 'B';
+
+} else if (marks >= 70) {
+
+    grade = 'C';
+
+} else if (marks >= 60) {
+
+    grade = 'D';
+
+} else {
+
+    grade = 'F';
+
+}
+
+console.log("Your grade is:", grade); // Your grade is: B
+
+
+
+
+
+
+
+
+
+
+
+
+
+// switch
+
+// The switch statement executes a block of code based on different cases.
+
+let score = 90;
+
+
+
+switch (true) {
+
+    case (score >= 90):
+
+        console.log("A");
+
+        break;
+
+    case (score >= 80):
+
+        console.log("B");
+
+        break;
+
+    case (score >= 70):
+
+        console.log("C");
+
+        break;
+
+    case (score >= 60):
+
+        console.log("D");
+
+        break;
+
+    default:
+
+        console.log("F");
+
+}
+
+
+
+let day = 13;
+
+switch (day) {
+
+    case 1:
+
+        console.log("Monday");
+
+        break;
+
+    case 2:
+
+        console.log("Tuesday");
+
+        break;
+
+    case 2:
+
+        console.log("Wednesday");
+
+        break;
+
+    case 4:
+
+        console.log("Thursday");
+
+        break;
+
+    case 5:
+
+        console.log("Friday");
+
+        break;
+
+    case 6:
+
+        console.log("Saturday");
+
+        break;
+
+    case 7:
+
+        console.log("Sunday");
+
+        break;
+
+    
+
+    default:
+
+        console.log("Invalid day");
+
+}
+
+
+
+// Loops
+
+// for loop
+
+// The for loop repeats a block of code a specified number of times.
+
+
+
+for (let i = 0; i < 5; i++) {
+
+    console.log("Iteration:", i);
+
+}
+
+
+
+// while loop
+
+// The while loop repeats a block of code as long as a specified condition is true.
+
+
+
+let i = 0;
+
+while (i < 5) {
+
+    document.write("Iteration:", i + "<br>");
+
+    i++;
+
+}
+
+
+
+// do...while loop
+
+// The do...while loop is similar to the while loop, but it executes the block of code once before checking the condition.
+
+
+
+let i = 0;
+
+do {
+
+    console.log("Iteration:", i);
+
+    i++;
+
+} while (i < 5);
+
+
+
+//
+
+
+
+
+
+
+
+// for...in loop
+
+// The for...in loop iterates over the properties of an object.
+
+
+
+let person = { firstName: "John", lastName: "Doe", age: 25 };
+
+for (let key in person) {
+
+    console.log(key + ": " + person[key]);
+
+}
+
+
+
+// for...of loop
+
+// The for...of loop iterates over iterable objects (like arrays).
+
+
+
+let numbers = [1, 2, 3, 4, 5];
+
+
+
+for (let number of numbers) {
+
+    document.write(number + "<br>");
+
+}
+
+
+
+// Practical Examples
+
+// Check Even or Odd Number
+
+let number = 7;
+
+if (number % 2 === 0) {
+
+    console.log(number + " is even.");
+
+} else {
+
+    console.log(number + " is odd.");
+
+}
+
+
+
+// Print Numbers from 1 to 10
+
+for (let i = 1; i <= 10; i++) {
+
+    console.log(i);
+
+}
+
+
+
+// Calculate Factorial of a Number
+
+let num = 5;
+
+let factorial = 1;
+
+for (let i = 1; i <= num; i++) {
+
+    factorial *= i;
+
+}
+
+console.log("Factorial of " + num + " is " + factorial); // Factorial of 5 is 120
+
+
+
+arr = [1 , 2 ,3]
+
+arr[0] = 1
+
+
+
+
+
+// Print the Properties of an Object
+
+let car = { make: "Toyota", model: "Corolla", year: 2020 };
+
+for (let key in car) {
+
+    console.log(key + ": " + car[key]);
+
+}
+
+
+
+// Iterate Over an Array and Print Values
+
+let fruits = ["Apple", "Banana", "Cherry"];
+
+for (let fruit of fruits) {
+
+    console.log(fruit);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Object: Complex data structures
+
+let person = { firstName: "techno", lastName: "globe" };
+
+document.write(person[firstName]);
+
+
+
+document.write(person.firstName + " " + person.lastName);
+
+console.log(`${person.firstName + person.lastName} ${person.lastName}`); // Output: techno globe
+
+
+
+
+
+------------------------------------------------------------------------------------------
+
+
+
+
+Functions
+
+// Functions in JavaScript are reusable blocks of code that perform a specific task. They allow you to organize your code into manageable pieces and avoid repetition.
+
+
+
+// Defining Functions
+
+// Function Declaration
+
+// You can define a function using the function keyword followed by the function name, parameters (optional), and function body enclosed in curly braces {}.
+
+
+
+// Function declaration
+
+function greet(name) {
+
+    console.log("Hello, " + name + "!");
+
+}
+
+greet("John");
+
+// Function Expression
+
+// Functions can also be defined using function expressions. These are typically assigned to variables.
+
+// Function expression
+
+let greet = function(name) {
+
+    console.log("Hello, " + name + "!");
+
+};
+
+
+
+// Calling Functions
+
+// Once a function is defined, you can call (execute) it by using its name followed by parentheses ().
+
+greet("John"); // Output: Hello, John!
+
+
+
+
+
+
+
+
+
+// Function Parameters and Arguments
+
+// Functions can accept parameters (inputs) when they are defined. These parameters act as placeholders for values that are passed to the function when it is called.
+
+function add(a, b) {
+
+    return a + b;
+
+}
+
+
+
+let result = add(3, 5);
+
+console.log("Sum:", result); // Output: Sum: 8
+
+
+
+
+
+// Return Statement
+
+// Functions can return a value using the return statement. Once a return statement is executed, the function stops executing further code
+
+function multiply(a, b) {
+
+    return a * b;
+
+}
+
+
+
+let product = multiply(4, 6);
+
+console.log("Product:", product); // Output: Product: 24
+
+
+
+
+
+// Default Parameters
+
+// ES6 introduced default parameter values for functions. These values are used when the corresponding argument is not passed or is undefined.
+
+
+
+
+
+greet(); // Output: Hello, Guest!
+
+greet("Alice"); // Output: Hello, Alice!
+
+
+
+
+
+// Arrow Functions
+
+// Arrow functions provide a more concise syntax for writing functions, especially for one-liners. They also handle the this keyword differently compared to regular functions.
+
+// Regular function
+
+function square(x) {
+
+    return x * x;
+
+}
+
+
+
+// Arrow function
+
+let square = (x) => x * x;
+
+document.write(square(5));
+
+
+
+
+
+let square = (x,y) => x * y;
+
+
+
+document.write(square(5 , 10));
+
+
+
+
+
+// Function Scope
+
+// Variables declared inside a function are local to that function and cannot be accessed outside of it (unless returned).
+
+function example() {
+
+    let message = "Hello";
+
+    console.log(message); // Output: Hello
+
+}
+
+
+
+console.log(message); // Error: message is not defined
+
+
+
+
+
+// Function Hoisting
+
+// Function declarations are hoisted in JavaScript, meaning they are moved to the top of their scope during compilation.
+
+greet("John"); // Output: Hello, John!
+
+
+
+function greet(name) {
+
+    console.log("Hello, " + name + "!");
+
+}
+
+
+
+
+
+                    // Practical Examples
+
+                    // Calculate Power
+
+function power(base, exponent) {
+
+    let result = 1;
+
+    for (let i = 0; i < exponent; i++) {
+
+        result *= base;
+
+    }
+
+    return result;
+
+}
+
+
+
+let result = power(2, 3);
+
+console.log("2 raised to the power of 3:", result); // Output: 2 raised to the power of 3: 8
+
+
+
+// Convert Fahrenheit to Celsius
+
+function fahrenheitToCelsius(fahrenheit) {
+
+    let celsius = (fahrenheit - 32) * 5 / 9;
+
+    return celsius;
+
+}
+
+
+
+let tempF = 68;
+
+let tempC = fahrenheitToCelsius(tempF);
+
+console.log(tempF + "°F is equal to " + tempC.toFixed(2) + "°C"); // Output: 68°F is equal to 20.00°C
+
+
+
+
+
+// Check if a Number is Prime
+
+function isPrime(number) {
+
+    if (number <= 1) {
+
+        return false;
+
+    }
+
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+
+        if (number % i === 0) {
+
+            return false;
+
+        }
+
+    }
+
+    return true;
+
+}
+
+
+
+let num = 17;
+
+if (isPrime(num)) {
+
+    console.log(num + " is a prime number."); // Output: 17 is a prime number.
+
+} else {
+
+    console.log(num + " is not a prime number.");
+
+}
